@@ -3,6 +3,7 @@ Lake Kegonsa House
 
 A major house renovation on [Lake Kegonsa](https://www.google.com/maps/place/3232+Aalseth+Ln,+Stoughton,+WI+53589/@42.94901,-89.25464,17z/data=!3m1!4b1!4m2!3m1!1s0x88064f5076276249:0x2fda5a143436c772)
 
+Similar to our [IFCopenHouse](https://github.com/OpeningDesign/IFCopenHouse_Lantern_Hollow) we're using this open source project to try and push #openBIM even further.
 
 ![](https://raw.githubusercontent.com/OpeningDesign/Lake_Kegonsa_Home/be9ef75b559b8feb1c7bb8a62e18f54e21939fa6/Out/20140913%20-%20for%20review/Lake_Kegonsa_Home%20Page%20010.png)
 
