@@ -21,14 +21,15 @@ Although, currently we're looking for a **structural engineer** to collaborate w
 * Energy Conservation Consultant
 * Environmental Engineer
 * Estimators
+* Fabricators
 * Geotechnical Engineer
 * Landscape Architect
 * Lighting Designer
 * Mechanical Engineer
-* Owners
 * Plumbing Engineer
 * Specification Writer
 * Structural Engineer
+* Sub-contractors
 * And of course, most importantly, *Building & Facility Owners*. :)
 
 
