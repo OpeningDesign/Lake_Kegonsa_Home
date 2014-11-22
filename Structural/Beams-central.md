@@ -31,7 +31,7 @@ Max D1+D2+D3 & Dmin            **D = D1+D2 = 18 psf**
 
 **3. Structural Design.**
 
-3.1. Floor 2, Central Beam Design – Beam at grid (3).
+3.1. Floor 2, Central Beam Design – Beam at grid (2).
 
 3.1.1 Span 1
 
@@ -123,6 +123,38 @@ AISC Check
 
     Y, LBW, LLB checks apply.
 
+
+3.3.1 Floor 2, Beam at grid (H), uniform load + conc. load
+
+    Initial material:    A99 Steel ASTM.
+
+    Span = 20.75'
+
+    Length = 20.75'
+
+Loads Calculation
+
+    Distr. Load Area        = 20.75 x 7 = 145.25 sf.
+
+    Dead Load    		    = 145.25 x 18 / 20.75 = 126 pf = 0.126 kip/ft
+
+    Live Load  		      	= 145.25 x 40 / 20.75 = 280 pf = 0.28 kip/ft
+
+    Conc. load from 3.1.1	= 3wl/8 = 3 * 0.7 * 12 / 8 = 3.15 kip
+
+AISC Check
+
+    ASD Design as per 2.1.1. SPS
+
+Section        = **W12X26**
+
+    Fy            = 50 ksi
+
+    Fu            = 65 ksi
+
+    All considered sections are compact, Y and LBW checks apply.
+
+
 **4. Design Results**
 
    
@@ -135,6 +167,10 @@ Unbraced:                 = A992 Steel, W Shape **W6X16** (see Calculation 3.1.1
 
 Unbraced:                 = A36 Steel, L Shape **L8X4X9/16** (see Calculation 3.2.)
 
+4.3. Floor 2, Main Beam Design – Beam at grid (H).  
+
+Unbraced:                 = A992 Steel, W Shape **W12X26** (see Calculation 3.3.)
+
 **Calculation 3.1.1.**
 
 ![Calc 3.1.1](Beams-central.md.2.png "Calc 3.1.1")
@@ -142,3 +178,7 @@ Unbraced:                 = A36 Steel, L Shape **L8X4X9/16** (see Calculation 3.
 **Calculation 3.2.**
 
 ![Calc 3.2](Beams-central.md.3.png "Calc 3.2")
+
+**Calculation 3.3.**
+
+![Calc 3.3](Beams-central.md.4.png "Calc 3.3")
