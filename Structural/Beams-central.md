@@ -26,6 +26,8 @@ Walls: light-frame wood walls        D2 = approx 6 psf
 
 Max D1+D2+D3 & Dmin            **D = D1+D2 = 18 psf**
 
+Snow Load				= **15.9 psf**
+
 **D** = 18 psf        as per WAC Chapter SPS 321, calculation  
 **L** = 40 psf        as per WAC Chapter SPS 321 Table 321.02
 
@@ -89,11 +91,27 @@ Loads Calculation
 
     Span 1:
 
-Load Area         = 12 x 7.5 = 90 sf.
+Load Area         	= 12 x 7.5 	= 90 sf.
+Roof/ceiling load span 		 	= 12 ft.
 
-    Dead Load         = 90 x 18 / 12 = 135 pf = 0.135 kip/ft
+    Dead Load 1        		= 90 x 18 / 12 = 135 pf = 0.135 kip/ft
 
-    Live Load        = 90 x 40 /12 = 300 pf = 0.3 kip/ft
+	Dead Load, Roof:
+	Minimum value: 			Dmin = 10 psf;
+	Rafters 				D1 = 3 psf;
+	Plywood & sheathing 	D2 = 3psf/inch * 0.75 = 2.25 psf
+	Roofing				    D3 = 2 psf
+	Max D1+D2+D3 & Dmin		D = 10 psf
+
+	Dead Load, Ceiling:		D1 (wood joists) 	= 0.85 psf
+							D2 (gypsum 5/8")	= 2.75 psf
+							D = D1 + D2 		= 3.6 psf
+	Dead Load 2 			= (10 + 3.6) * 12 	= 0.163 kip/ft
+
+	Snow Load Area:			2/5 of roof area
+
+    Live Load        	= 90 x 40 /12 = 300 pf 	= 0.3 kip/ft
+    Snow Load 			= 15.9 * 12 * 2/5 		= 0.076 kip/ft
 
     Span 2:
 
@@ -165,7 +183,7 @@ Unbraced:                 = A992 Steel, W Shape **W6X16** (see Calculation 3.1.1
 
 4.2. Floor 2, Lintel Beam Design – Beam at grid (4).  
 
-Unbraced:                 = A36 Steel, L Shape **L8X4X9/16** (see Calculation 3.2.)
+Unbraced:                 = A36 Steel, L Shape **L8X6X3/4** (see Calculation 3.2.)
 
 4.3. Floor 2, Main Beam Design – Beam at grid (H).  
 
