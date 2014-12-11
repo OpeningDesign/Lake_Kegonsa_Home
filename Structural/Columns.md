@@ -1,38 +1,130 @@
-# Example Column Design #
+**Column Analysis. Columns at Axis 3, Axis 7**
+
+**1. Sketch.**
+
+![Sketch](Beams-central.md.1.png "Sketch")
+
+**2. Input Summary.**
+
+2.1. Applicable codes.
+2.1.1. Wisconsin Administrative Code, Chapter SPS 321 – Uniform Dwelling Code
+2.1.2. ASCE 07-05, Minimum Loads on Buildings
+2.1.3. AISC 360-05, Specification for Structural Steel Buildings
+
+2.2. Design considerations.
+As per 2.1.1, allowable stress design (ASD) is performed for steel elements using 2.1.3.
+
+2.3. Load values
+
+Dead Load Calculation:
+Minimum value: 							Dmin = 10 psf;
+Flooring: Wood Joists w/ Wood flooring 	D1 = approx. 12 psf;
+Walls: light-frame wood walls			D2 = approx 6 psf
+Max D1+D2+D3 & Dmin						D = D1+D2 = 18 psf
+
+D = 18 psf		as per WAC Chapter SPS 321, calculation
+L = 40 psf		as per WAC Chapter SPS 321 Table 321.02
 
 
+**3. Structural Design.**
 
-|          LOADS AND SPAN         |             |         | SECTION PROPERTIES |                               |             |             |        |      |
-| ------------------------------- | ----------- | ------- | ------------------ | ----------------------------- | ----------- | ----------- | ------ | ---- |
-| Wd=                             | 0,13        | kip/ft  | Shape  | d                             | tw          | bf          | tf     | Ry   | Zx   | Ix  | Sx   | J     | ho   |
-| Wl=                             | 0,353       | kip/ft  | W10X26 | 10,3                          | 0,26        | 5,77        | 0,44   | 1,36 | 31,3 | 144 | 27,9 | 0,402 | 9,86 |
-| L =                             | 21,6        | ft      |        |                               |             |             |        |      |      |     |      |       |      |
-|                                 |             |         |        |                               |             |             |        |      |      |     |      |       |      |
-| MATERIAL PROPERTIES             |             |         | A992   | High-Strength Low-Alloy       |             |             |        |      |      |     |      |       |      |
-| Fy =                            | 50          |         |        | Preferred for W shape         |             |             |        |      |      |     |      |       |      |
-| Fx =                            | 65          |         |        |                               |             |             |        |      |      |     |      |       |      |
-| E =                             | 29000       |         |        |                               |             |             |        |      |      |     |      |       |      |
-|                                 |             |         |        |                               |             |             |        |      |      |     |      |       |      |
-| REQUIRED MOMENT OF INERTIA      |             |         |        | DESIGN MOMENT OF INERTIA      |             |             |        |      |      |     |      |       |      |
-| D = L/360                       | 0,72        | inch    |        | Ix =                          | 144         | inch^4      |        |      |      |     |      |       |      |
-| Ix (req) =                      | 82,80217291 | inch^4  |        | Ix req                        | <           | Ix          |        |      |      |     |      |       |      |
-| Deflection criterion OK         |             |         |        | Checking Section              |             | W10X26      |        |      |      |     |      |       |      |
-|                                 |             |         |        |                               |             |             |        |      |      |     |      |       |      |
-| REQUIRED YIELD MOMENT           |             |         |        | DESIGN MOMENT AS PER AISC ASD |             |             |        |      |      |     |      |       |      |
-| Yield Criterion as per F2.1 ASD |             |         |        | Mp =                          | 1565        | kip-in      |        |      |      |     |      |       |      |
-| wa =                            | 0,483       | kip/ft  |        | Ob =                          | 1,67        |             |        |      |      |     |      |       |      |
-| Ma =                            | 338,02272   | kip-in  |        | Available Flexural Strength:  |             |             |        |      |      |     |      |       |      |
-|                                 |             |         |        | Mp / Ob =                     | 937,1257485 | kip-in      |        |      |      |     |      |       |      |
-| Ma                              | <           | Mp / Ob |        |                               |             |             |        |      |      |     |      |       |      |
-| Yield criterion OK              |             |         |        |                               |             |             |        |      |      |     |      |       |      |
-|                                 |             |         |        |                               |             |             |        |      |      |     |      |       |      |
-| Rts =                           | 1,536093205 |         |        | LATERAL-TORSIONAL BUCKLING    |             |             |        |      |      |     |      |       |      |
-| Lr =                            | 138,8392288 | inch    |        | DESIGN MOMENT AS PER AISC ASD |             |             |        |      |      |     |      |       |      |
-| Lp =                            | 57,64552157 | inch    |        |                               | Sx =        | 27,9        |        |      |      |     |      |       |      |
-| Lb =                            | 259,2       | inch    |        |                               | Jc =        | 0,402       |        |      |      |     |      |       |      |
-| Bracing @                       | 0           | points  |        |                               | h0 =        | 9,86        |        |      |      |     |      |       |      |
-|                                 |             |         |        |                               | Fcr =       | 20,69112477 |        |      |      |     |      |       |      |
-|                                 |             |         |        | Case (b)                      | Mn =        | 104,1132572 | kip-in |      |      |     |      |       |      |
-| Using case (c):                 |             |         |        | Case (c)                      | Mn =        | 577,282381  | kip-in |      |      |     |      |       |      |
-| Ma                              | <           | Mn / Ob |        |                               | Mn / Ob =   | 345,6780724 | kip-in |      |      |     |      |       |      |
-| Buckling criterion OK           |             |         |        |                               |             |             |        |      |      |     |      |       |      |
+3.1 Columns at gridline (4).
+
+3.1.1. Column at gridline (4D)
+
+	Material 		= A500 Steel ASTM.
+	Unbraced length = 7.58'
+
+Loads Calculation from Beams-Central reactions calc (3.2.1):
+
+	Total Point Load 	= R1 = 4.57 kip
+	Dead Load 			= 1.4 		kip
+	Live Load			= 3.17 		kip
+
+ASD Design as per 2.1.1. SPS 
+
+	Section		= HSS3.5X.188
+	Fy			= 42 ksi
+	Fu			= 58 ksi
+	Compression/buckling checks apply.
+
+3.1.2. Column at gridline (4F)
+
+	Material 		= A500 Steel ASTM.
+	Unbraced length = 7.58'
+
+Loads Calculation from Beams-Central reactions calc (R2 from 3.2.1):
+
+	Total Point Load 	= R2 	= 13.84 	kip
+	Dead Load 					= 4.33 		kip
+	Live Load					= 9.51 		kip
+
+ASD Design as per 2.1.1. SPS 
+
+	Section		= HSS3.5X.188
+	Fy			= 42 ksi
+	Fu			= 58 ksi
+	Compression/buckling checks apply.
+
+3.1.3. Column at gridline (4H)
+
+	Material 		= A500 Steel ASTM.
+	Unbraced length = 9.9'
+
+Loads Calculation from Beams-Central reactions calc (R3 from 3.2.1, R2 from 3.3.1):
+
+	Total Point Load 	= R3 +R2	= 3.67+5.33 = 9.0 	kip
+	Dead Load 									= 2.8 	kip
+	Live Load									= 6.2 	kip
+
+ASD Design as per 2.1.1. SPS 
+
+	Section		= HSS3.5X.188
+	Fy			= 42 ksi
+	Fu			= 58 ksi
+	Compression/buckling checks apply.
+
+
+3.2. Columns at gridline (2).
+
+Material:	A500 Steel ASTM.
+
+	Unbraced length = 11.3’
+
+Loads Calculation (worst case)
+
+	Load Area 		= 14 x 8 = 112 sf.
+	Dead Load 		= 112 x 18 = 2.1 kip
+	Live Load		= 112 x 40= 4.5 kip
+
+ASD Design as per 2.1.1. SPS 
+
+Section		= HSS3.5X.188
+
+	Fy			= 42 ksi
+	Fu			= 58 ksi
+	Compression/buckling checks apply.
+
+
+**4. Design Results**
+	
+4.1 Columns at gridline (4).
+
+Unbraced: 		= A500 Gr. B Steel, HSS Shape HSS3.5X.188 (see Calculation 3.1.)
+
+4.2. Columns at gridline (2).
+
+Unbraced: 		= A500 Gr. B Steel, HSS Shape HSS3.5X.188 (see Calculation 3.2.)
+
+ 
+Calculation 3.1.
+
+Only governing calculation for columns (4F) and (4H) are shown
+
+![Calc 3.1.2](Columns-central.F4.png "Calc 3.1.2")
+
+![Calc 3.1.3](Columns-central.H4.png "Calc 3.1.3")
+
+Calculation 3.2.
+ 
+![Calc 3.2](Columns-central.F2.png "Calc 3.2")

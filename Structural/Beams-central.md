@@ -174,6 +174,11 @@ Loads Calculation
 
     Conc. load from 3.1.1	= 3wl/8 = 3 * 0.7 * 12 / 8 = 3.15 kip
 
+    Reactions at HSS columns gridlines (1H), (4H), DL+LL, respectively:
+    R1 = wl/2 + Pb/l        = 0.406*20.75/2 + 3.15*13.3/20.75 = 6.22 kip
+    R2 = wl/2 + P(l-b)/l    = 0.406*20.75/2 + 3.15*7.45/20.75 = 5.33 kip
+
+
 AISC Check
 
     ASD Design as per 2.1.1. SPS
