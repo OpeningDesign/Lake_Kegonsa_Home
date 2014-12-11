@@ -117,15 +117,15 @@ Roof/ceiling load span 		 	= 12 ft.
 
     Load Area 1        = 7.4 x 7.5 = 55.5 sf
 
-    Load Area 2 (point)    = 10.7 x 13 = 139 sf
+    Load Area 2 (point)    = 13 x 7.3 = 94.9 sf
 
     Dead Load        = 55.5 x 18 / 12 = 0.083 kip/ft
 
     Live Load        = 55.5 x 40 / 12 = 0.185 kip/ft
 
-    Point Dead Load    = 139 x 18 = 2.5 kip
+    Point Dead Load    = 94.9 x 18 = 1.7 kip
 
-    Point Live Load    = 139 x 40 = 5.56 kip
+    Point Live Load    = 94.9 x 40 = 3.8 kip
 
 
 
@@ -133,13 +133,27 @@ AISC Check
 
     ASD Design as per 2.1.1. SPS
 
-    Initial section        = L6X4X9/16
+    Initial section        = L8X4X9/16
 
     Fy            = 36 ksi
 
     Fu            = 58 ksi
 
     Y, LBW, LLB checks apply.
+
+    Design values calculation:
+    continuous beam, unequal spans, uniform load W + conc. load P
+
+    Design moment of inertia :
+    I = 2.33 * P + 31.6 * W = 12.82 + 21.3 = 34.12 in^4
+
+    Design moment M:
+    M = 0.844 * P + 19.2 * W = 210,9 kip*in
+
+    Reactions at HSS columns gridlines (D), (F), (H) respectively:
+    R1 = 2.27 + 2.3 	= 4.57 kip
+    R2 = 10.31 + 3.53 	= 13.84 kip
+    R3 =				= 3.67 kip
 
 
 3.3.1 Floor 2, Beam at grid (H), uniform load + conc. load
@@ -183,7 +197,7 @@ Unbraced:                 = A992 Steel, W Shape **W6X16** (see Calculation 3.1.1
 
 4.2. Floor 2, Lintel Beam Design – Beam at grid (4).  
 
-Unbraced:                 = A36 Steel, L Shape **L8X6X3/4** (see Calculation 3.2.)
+Unbraced:                 = A36 Steel, L Shape **L8X4X9/16** (see Calculation 3.2.)
 
 4.3. Floor 2, Main Beam Design – Beam at grid (H).  
 
