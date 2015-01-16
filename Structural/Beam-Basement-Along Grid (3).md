@@ -39,7 +39,7 @@ Max D1+D2+D3 & Dmin            **D = D1+D2 = 18 psf**
 	
 	Pw = 2.35 kip
 
-    Load 2: distributed load from 2nd floor, load area width = 7'
+    Load 2: distributed load from 2nd floor, load area width = 5'
 
 	**Wd** = 18*5 = 0.090 kip/ft 
 
